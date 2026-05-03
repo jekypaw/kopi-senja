@@ -1,0 +1,352 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  background-color: #0a0a0f;
+  color: #e2e8f0;
+}
+
+/* ── NAVBAR ── */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  background-color: #0a0a0f;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #1e1e2e;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+  color: #f59e0b;
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: #64748b;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #f59e0b;
+}
+
+/* ── HERO ── */
+.hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  padding: 80px;
+  background: radial-gradient(ellipse at top left, rgba(245,158,11,0.08) 0%, transparent 60%);
+  border-bottom: 1px solid #1e1e2e;
+}
+
+.hero-label {
+  font-size: 13px;
+  color: #f59e0b;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 56px;
+  line-height: 1.2;
+  color: #f1f5f9;
+  margin-bottom: 20px;
+}
+
+.hero-sub {
+  font-size: 16px;
+  color: #64748b;
+  max-width: 480px;
+  line-height: 1.8;
+  margin-bottom: 36px;
+}
+
+.hero-btns {
+  display: flex;
+  gap: 16px;
+}
+
+.btn-primary {
+  display: inline-block;
+  background-color: #f59e0b;
+  color: #0a0a0f;
+  padding: 14px 32px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  transition: all 0.2s;
+  border: none;
+  cursor: pointer;
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+.btn-primary:hover {
+  background-color: #d97706;
+  transform: scale(1.03);
+}
+
+.btn-secondary {
+  display: inline-block;
+  background-color: transparent;
+  color: #f59e0b;
+  padding: 14px 32px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid #f59e0b;
+  transition: all 0.2s;
+}
+
+.btn-secondary:hover {
+  background-color: #f59e0b;
+  color: #0a0a0f;
+}
+
+/* ── SECTION ── */
+.section {
+  padding: 80px;
+  border-bottom: 1px solid #1e1e2e;
+}
+
+.section-dark {
+  background-color: #0d0d14;
+}
+
+.section-header {
+  margin-bottom: 48px;
+}
+
+.section-label {
+  font-size: 12px;
+  color: #f59e0b;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.section-header h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  color: #f1f5f9;
+}
+
+/* ── MENU GRID ── */
+.menu-grid {
+  display: flex;
+  gap: 24px;
+}
+
+.menu-card {
+  flex: 1;
+  background-color: #0d0d14;
+  border-radius: 16px;
+  padding: 28px;
+  border: 1px solid #1e1e2e;
+  transition: transform 0.25s, border-color 0.25s;
+}
+
+.menu-card:hover {
+  transform: translateY(-6px);
+  border-color: #f59e0b;
+}
+
+.menu-icon {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.menu-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #f1f5f9;
+  margin-bottom: 8px;
+}
+
+.menu-card p {
+  font-size: 13px;
+  color: #64748b;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.harga {
+  font-size: 15px;
+  font-weight: 700;
+  color: #f59e0b;
+}
+
+/* ── TESTIMONI ── */
+.testimoni-grid {
+  display: flex;
+  gap: 24px;
+}
+
+.testimoni-card {
+  flex: 1;
+  background-color: #12121a;
+  border-radius: 16px;
+  padding: 28px;
+  border: 1px solid #1e1e2e;
+}
+
+.bintang {
+  color: #f59e0b;
+  font-size: 16px;
+  margin-bottom: 14px;
+}
+
+.komentar {
+  font-size: 14px;
+  color: #94a3b8;
+  line-height: 1.8;
+  margin-bottom: 16px;
+  font-style: italic;
+}
+
+.nama-pelanggan {
+  font-size: 13px;
+  color: #f59e0b;
+  font-weight: 600;
+}
+
+/* ── FORM RESERVASI ── */
+.form-container {
+  max-width: 560px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #94a3b8;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 13px 16px;
+  border-radius: 10px;
+  border: 1px solid #1e1e2e;
+  background-color: #0d0d14;
+  color: #e2e8f0;
+  font-size: 14px;
+  font-family: 'Inter', Arial, sans-serif;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #f59e0b;
+}
+
+.form-group textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.form-group select option {
+  background-color: #0d0d14;
+}
+
+.pesan-reservasi {
+  font-size: 13px;
+  margin-bottom: 16px;
+  min-height: 18px;
+}
+
+/* ── FOOTER ── */
+.footer {
+  padding: 48px 80px;
+  background-color: #0d0d14;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.footer-brand .logo {
+  margin-bottom: 10px;
+}
+
+.footer-brand p:last-child {
+  font-size: 14px;
+  color: #475569;
+  max-width: 280px;
+  line-height: 1.7;
+}
+
+.footer-info p {
+  font-size: 14px;
+  color: #475569;
+  margin-bottom: 8px;
+}
+
+.footer-copy {
+  font-size: 13px;
+  color: #334155;
+  text-align: center;
+  padding-top: 24px;
+  border-top: 1px solid #1e1e2e;
+}
+
+/* ── MENU IMAGE ── */
+.menu-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  transition: transform 0.3s;
+}
+
+.menu-card:hover .menu-img {
+  transform: scale(1.03);
+}
+
+.menu-info h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #f1f5f9;
+  margin-bottom: 8px;
+}
+
+.menu-info p {
+  font-size: 13px;
+  color: #64748b;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
